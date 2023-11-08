@@ -1,5 +1,20 @@
-h1 {
+html {
+  background-color: #C0C0C0;
+}
+
+header {
+  background-color: #808080;
+  opacity: 0.8;
+  position: fixed;
+}
+
+header h1 {
   font-size: 24px;
   padding-bottom: 8px;
   border-bottom: 1px solid #ddd;
 }
+
+header p {
+  border-bottom: 2px solid #ddd;
+}
+
