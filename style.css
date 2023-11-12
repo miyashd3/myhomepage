@@ -3,6 +3,7 @@ html {
 }
 
 header {
+  margin: 0;
   background-color: #808080;
   width: 100%;
   height: 64px;
@@ -32,6 +33,7 @@ header p {
 .box {
   background-color: #F8F8FF;
   border: 1px solid black;
+  position: flex;
   width: 25%;
 }
 
@@ -40,5 +42,6 @@ h2 {
 }
 
 .works {
+  text-align: center;
   padding-top: 20px;
 }
