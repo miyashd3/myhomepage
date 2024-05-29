@@ -1,27 +1,55 @@
 body {
+  /* font-family: 'Comic Sans MS', cursive; */
   margin: 0;
   padding: 0;
   background-color: #C0C0C0;
 }
 
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
 header {
-  background-color: #808080;
-  width: 100%;
-  height: 64px;
-  opacity: 0.8;
-  position: fixed;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
 }
 
 header h1 {
-  float: left;
-  font-size: 24px;
-  padding-left: 20px;
-  padding-bottom: 8px;
+  border: solid 1px white;
+  font-size: xxx-large;
 }
 
-header p {
-  float: right;
-  padding-right: 20px;
+.container {
+  display: flex;
+}
+
+.top-left-panel, .top-right-panel, .middle-panel, .bottom-left-panel, .bottom-right-panel {
+  text-align: center;
+  border: solid 3px #1d3030;
+  margin: 5px;
+  background-color: #F5F5F5;
+}
+
+.top-right-panel, .bottom-left-panel {
+  width: 70%;
+}
+
+.top-left-panel, .bottom-right-panel {
+  width: 30%;
+}
+
+/* 真ん中のコマ */
+.middle-panel {
+  height: 60%;
+  width: 100%;
+  background-color: #F5F5F5;
 }
 
 .main {
@@ -31,25 +59,11 @@ header p {
   border-bottom: 1px solid #F5F5F5;
 }
 
-.container {
-  flex-direction: column;
-}
-
-.box {
-  background-color: #F8F8FF;
-  border: 1px solid black;
-  margin: 0 auto;
-}
-
 h2 {
   color: #2F4F4F;
 }
 
-.works {
-  text-align: center;
-  padding-top: 20px;
-}
-
 footer {
+  margin-top: 2em;
   text-align: center;
 }
