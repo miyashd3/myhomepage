@@ -6,58 +6,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>宮下大典のポートフォリオサイト</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
   <header>
     <h1>MIYASHITA.D</h1>
   </header>
   
-  <div class="container">
-    <div class="top-left-panel">
-      <h2>資格</h2>
-      <ul>
-        <li>基本情報技術者</li>
-        <li>貴重品運搬警備業務検定２級</li>
-        <li>第一種普通自動車運転免許</li>
-      </ul>
+  <div class="main">
+    <div class="container">
+      <div class="top-left-panel" data-modal="modalTopLeft">
+        <h2>License</h2>
+      </div>
+      <div class="modal" id="modalTopLeft">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <ul>
+            <li>基本情報技術者</li>
+            <li>貴重品運搬警備業務検定２級</li>
+            <li>第一種普通自動車運転免許</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="top-right-panel"  data-modal="modalTopRight">
+        <h2>Who?</h2>
+      </div>   
+      <div class="modal" id="modalTopRight">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>name:宮下大典</p>
+          <p>like:⬇︎</p>
+          <p>バスケットボール</p>
+          <p>NBA</br>(Bostonセルティックス)</p>
+          <p>映画</br>(MARVEL, STAR WARS, Dhisney, TRANSFORMER)</p>
+          <p>漫画,Comic</br>(OnePiece, 呪術廻戦, 遊戯王, 幽遊白書, スラムダンク, リアル, ワンパンマン, 僕のヒーローアカデミア)</p>
+        </div>
+      </div>
     </div>
 
-    <div class="top-right-panel">
-      <h2>who?</h2>
-      <p>宮下大典</p>
-      <p>バスケットボール</p>
-      <p>NBA (Bostonセルティックス)</p>
-      <p>映画 (MARVEL, STAR WARS, Dhisney, TRANSFORMER)</p>
-      <p>MANGA,Comic (OnePiece, 呪術廻戦, 遊戯王, 幽遊白書, スラムダンク, リアル, ワンパンマン, 僕のヒーローアカデミア)</p>
+    <div class="container">
+      <div class="middle-panel" data-modal="modalMiddle">
+        <h2>Portfolio</h2>
+      </div>
+      <div class="modal" id="modalMiddle">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>ProgateでHTML&CSSを学習完了</p>  
+          <p>MAMPでメモアプリを作成しました!</p>
+          <p>laravel勉強中</p>
+          <p>書籍でも勉強中です</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="bottom-left-panel" data-modal="modalBottomLeft">
+        <h2>Job</h2>
+      </div>
+      <div class="modal" id="modalBottomLeft">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <li>元警備員(現金輸送)３年半</li>
+          <li>日本酒 酒蔵 1年半</li>
+          <li>宅配ドライバー ５年 継続中</li>  
+        </div>
+      </div>
+
+      <div class="bottom-right-panel">
+        <h2>SNS</h2>
+        <a href="https://x.com/daisukeman3166"><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-youtube"></i> youtube</a>
+        <a href="https://github.com/miyashd3"><i class="bi bi-github"></i> Github</a>
+        <a href="https://www.daisukemanblog.com/"><i class="bi bi-wordpress"></i> blog</a>
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="middle-panel">
-      <h2>Portfolio</h2>
-      <p>ProgateでHTML&CSSを勉強中</p>  
-      <p>MAMPでメモアプリを作成しました!</p>
-      <p>laravel勉強中</p>
-    </div>  
+  <div class="sample">
+    <p>使用したイラスト</p>
+    <a href="http://loosedrawing.com/">https://loosedrawing.com/</a>
   </div>
-  
-  <div class="container">
-    <div class="bottom-left-panel">
-      <h2>JOB</h2>
-      <li>元警備員(現金輸送)３年半</li>
-      <li>日本酒 酒蔵 1年半</li>
-      <li>宅配ドライバー ５年 継続中</li>
-    </div>
-    <div class="bottom-right-panel">
-      <h2>SNS</h2>
-      <li>X(twitter)</li>
-      <li>blog</li>
-    </div>
-  </div>
-  
+
   <footer>
     <p>thanks for watching!</p>
-    <p>&copy; 2022 宮下大典. All Rights Reserved.</p>
+    <p>&copy; 2024 宮下大典. All Rights Reserved.</p>
   </footer>
+
+  <script src="modal.js"></script>
 </body>
 </html>

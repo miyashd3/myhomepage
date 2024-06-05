@@ -22,48 +22,128 @@ header {
 }
 
 header h1 {
-  border: solid 1px white;
+  border: solid 1px rgb(189, 180, 161);
   font-size: xxx-large;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .container {
   display: flex;
+  height: 40vh;/* ビューポートの高さに合わせる */
 }
+
+.top-left-panel:hover, .top-right-panel:hover, .middle-panel:hover, .bottom-left-panel:hover, .bottom-right-panel:hover {
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
 
 .top-left-panel, .top-right-panel, .middle-panel, .bottom-left-panel, .bottom-right-panel {
   text-align: center;
   border: solid 3px #1d3030;
   margin: 5px;
-  background-color: #F5F5F5;
+  background-color: rgb(255, 255, 255, 0.5);
+  height: auto;
 }
 
 .top-right-panel, .bottom-left-panel {
-  width: 70%;
+  width: 60%;
+}
+
+.top-right-panel {
+  background-image: url(/Users/miyashd3/Documents/イメージ/1592.png);
+  background-size: 100% 100%;
+}
+.top-left-panel {
+  background-image: url(/Users/miyashd3/Documents/イメージ/706.png);
+  background-size: 100% 100%;
+}
+.middle-panel {
+  background-image: url(/Users/miyashd3/Documents/イメージ/1200.png);
+  background-size: 100% 100%;
+}
+.bottom-left-panel {
+  background-image: url(/Users/miyashd3/Documents/イメージ/74.png);
+  background-size: 100% 100%;
 }
 
 .top-left-panel, .bottom-right-panel {
-  width: 30%;
+  width: 40%;
 }
 
-/* 真ん中のコマ */
 .middle-panel {
-  height: 60%;
   width: 100%;
-  background-color: #F5F5F5;
-}
-
-.main {
-  padding-top: 64px;
-  text-align: center;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #F5F5F5;
 }
 
 h2 {
   color: #2F4F4F;
 }
 
+.bottom-right-panel a {
+  display: block; /* ブロック要素のように扱う */
+  padding: 10px 20px; /* パディングを設定 */
+  background-color: #4f5c69; /* 背景色を設定 */
+  color: white; /* テキストの色を白に設定 */
+  text-align: center; /* テキストを中央揃えに */
+  text-decoration: none; /* 下線を消す */
+  border-radius: 5px; /* 角を丸くする */
+  margin: 10px 10px;
+  transition: background-color 0.3s; /* 背景色の変化にアニメーションを設定 */
+}
+
+.bottom-right-panel a:hover {
+  background-color: #191c1f; /* ホバー時の背景色を変更 */
+}
+
+.sample p, .sample a {
+  margin: 0 auto;
+  font-size: small;
+}
+
 footer {
   margin-top: 2em;
   text-align: center;
+}
+
+/* モーダルの基本スタイル */
+.modal {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  z-index: 1; /* 他の要素より前面に */
+  left: 0;
+  top: 0;
+  width: 100%; /* 幅全体 */
+  height: 100%; /* 高さ全体 */
+  overflow: auto; /* スクロール可能に */
+  background-color: rgb(0,0,0); /* 背景色 */
+  background-color: rgba(0,0,0,0.4); /* 背景色（半透明） */
+}
+
+/* モーダルのコンテンツ */
+.modal-content {
+  background-color: #fefefe;
+  margin: 30% auto; /* 上下左右中央に配置 */
+  padding: 20px;
+  border: 2px solid #c70f24;
+  border-radius: 15px;
+  width: 80%; /* コンテンツの幅 */
+}
+
+/* 閉じるボタン */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
