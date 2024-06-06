@@ -55,19 +55,19 @@ header h1 {
 }
 
 .top-right-panel {
-  background-image: url(/Users/miyashd3/Documents/イメージ/1592.png);
+  background-image: url(img/1592.png);
   background-size: 100% 100%;
 }
 .top-left-panel {
-  background-image: url(/Users/miyashd3/Documents/イメージ/706.png);
+  background-image: url(img/706.png);
   background-size: 100% 100%;
 }
 .middle-panel {
-  background-image: url(/Users/miyashd3/Documents/イメージ/1200.png);
+  background-image: url(img/1200.png);
   background-size: 100% 100%;
 }
 .bottom-left-panel {
-  background-image: url(/Users/miyashd3/Documents/イメージ/74.png);
+  background-image: url(img/74.png);
   background-size: 100% 100%;
 }
 
